@@ -1,7 +1,7 @@
 {
     'name': 'Dokumentu valdymas',
     'category': 'Tools',
-        'description': """
+    'description': """
     Dokumentu ir knygu valdymo sistema
     ==================================
     Modulis leidzia valdyti ivairius dokumentus ir knygas, iskaitant ju saugojima, prieziura ir atsakingu asmenu priskyrima.

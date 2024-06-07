@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="res.groups" id="library_doc_manager">
+        <field name="name">Library Document Manager</field>
+        <field name="category_id" ref="base.module_category_services_management"/>
+    </record>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="library_doc_report_wizard_form_view">
+        <field name="name">library.doc.report.wizard.form</field>
+        <field name="model">library.doc.report.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="employee_id"/>
+                    </group>
+                    <footer>
+                        <button name="action_print_report" type="object" string="Print Report" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="library_doc_report_wizard_action">
+        <field name="name">Library Document Report</field>
+        <field name="res_model">library.doc.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem name="Reports" id="library_report_menu" parent="library_root_menu"/>
+    <menuitem name="Document Report" id="library_doc_report_menu" parent="library_report_menu" action="library_doc_report_wizard_action"/>
+</odoo>
